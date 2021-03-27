@@ -20,8 +20,7 @@ import com.eccomerce.com.main.MainActivity;
 import com.eccomerce.com.main.UslugRecyclerAdapter2;
 
 public class UslugiciActivity extends AppCompatActivity{
-    ImageView img_uslug;
-    TextView title_uslug;
+
     UslugRecyclerAdapter2 recycleAdapter;
     ImageView backimg;
     public  static Handler s1=new Handler();
