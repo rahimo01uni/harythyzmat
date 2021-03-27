@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cor_layout_vip_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_car_sahypa"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            android:minHeight="?attr/actionBarSize"
+            android:textAlignment="center"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@android:style/TextAppearance.Small"
+            app:titleTextColor="@android:color/white"
+
+            >
+            <ImageView
+                android:id="@+id/imageMain"
+                android:layout_above="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/small_realtor_show_details_nestedscrolview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:elevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/xx_details"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <com.daimajia.slider.library.SliderLayout
+                                android:id="@+id/slider_show"
+                                android:layout_width="match_parent"
+                                custom:pager_animation="Accordion"
+                                custom:auto_cycle="true"
+                                custom:indicator_visibility="visible"
+                                custom:pager_animation_span="1100"
+                                android:layout_height="match_parent"/>
+
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/viewpager_detail"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true" />
+
+                                                   <com.viewpagerindicator.CirclePageIndicator
+                                                       android:id="@+id/small_indicator_realtor_show_details"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="20dp"
+                                                       android:layout_alignParentBottom="true" />
+
+
+                        </RelativeLayout>
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/like_button"
+                            android:layout_width="54dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:elevation="5dp"
+                            android:scaleType="fitCenter"
+
+                            app:backgroundTint="@color/colorPrimary"
+                            app:fabSize="normal"
+                            app:layout_anchor="@id/xx_details"
+                            app:layout_anchorGravity="bottom|right|end"
+                            app:pressedTranslationZ="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:weightSum="90">
+
+                                <LinearLayout
+                                    android:id="@+id/l_rate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_marginLeft="-3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/cafe_star_image1_show"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        app:srcCompat="@drawable/star_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/cafe_star_image2_show"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        app:srcCompat="@drawable/star_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/cafe_star_image3_show"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        app:srcCompat="@drawable/star_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/cafe_star_image4_show"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        app:srcCompat="@drawable/star_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/cafe_star_image5_show"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        app:srcCompat="@drawable/star_white" />
+
+
+                                    <TextView
+                                        android:id="@+id/n_people"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="4dp"
+                                        android:text="4.1"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+                                    <TextView
+
+                                        android:id="@+id/item_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:text="from $10"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="22sp"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+                                    <TextView
+
+                                        android:id="@+id/ady"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@android:color/black"
+                                        android:text="Ady: "
+                                        android:textSize="22sp" />
+
+                                    <TextView
+
+                                        android:id="@+id/item_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@android:color/black"
+                                        android:text="Shuby"
+                                        android:textSize="22sp"
+                                        android:maxLines="1"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/cody"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@android:color/black"
+                                        android:text="Harydyn kody: "
+                                        android:textSize="22sp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/item_kody"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@android:color/black"
+                                        android:text="sdfdsf"
+                                        android:textSize="22sp"
+                                        android:maxLines="1"
+                                        />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:gravity="left"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/maglumat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:text="Maglumat:"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16dp"
+                                        android:layout_marginBottom="8dp"/>
+
+                                    <TextView
+                                        android:id="@+id/Content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:text="Yagday gaty gowy degim yok lyuboy ussana barladay dine aljaklar jan etsin"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/call_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/circle"
+                                app:srcCompat="@drawable/ic_call_black_24dp"
+                                android:elevation="2dp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/darker_gray">
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/market_round_img"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_launcher_round"
+                            app:riv_border_color="@color/green"
+                            app:riv_border_width="3dp"
+                            app:riv_mutate_background="true"
+                            app:riv_oval="true" />
+
+                        <TextView
+                            android:id="@+id/market_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:linksClickable="true"
+                            android:text="Market"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentBottom="true"
+
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconSize="@dimen/bbn_fixed_item_icon_size"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/menu1" /></RelativeLayout>
+</RelativeLayout>

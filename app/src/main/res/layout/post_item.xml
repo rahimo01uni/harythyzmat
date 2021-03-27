@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/birn"
+            android:id="@+id/image_profile"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+                        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    >
+    <Button
+        android:layout_alignParentEnd="true"
+        android:id="@+id/following_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/follow_"
+        android:elevation="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:tag="1"
+        android:text="FOLLOW"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_post"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:id="@+id/description"
+            android:textColor="#AB000000"
+            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+<ImageView
+    android:id="@+id/like"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/ic_favorite_border_black_24dp"/>
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/comment"
+    android:src="@drawable/ic_comment"
+    android:layout_toEndOf="@+id/like"
+    android:layout_marginStart="10dp"
+    />
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/save"
+    android:layout_alignParentEnd="true"
+    android:src="@drawable/ic_save"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:id="@+id/likes"
+            android:textColor="#AB000000"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:id="@+id/publisher"
+            android:textColor="#AB000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/comments"
+            android:text="View All Comments"
+            android:textColor="#AB000000"
+            />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

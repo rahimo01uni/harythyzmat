@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('bottom-navigation-2.0.1-rc1.aar'))

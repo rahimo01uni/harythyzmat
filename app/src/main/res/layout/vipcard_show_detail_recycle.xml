@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageMain"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/disc"
+                android:layout_width="70dp"
+                android:layout_height="120dp"
+                android:background="@drawable/triangle_shape_online_market">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="7dp"
+                android:rotation="-45"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:maxLength="4"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageMain"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="12dp"
+                android:text="Book Shelf"
+                android:textSize="16sp"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:paddingBottom="0dp"
+                android:textColor="@android:color/black"
+                android:paddingStart="11dp"
+                android:text="$255"
+                android:textSize="14sp"
+                android:maxLines="1"/>
+
+            <ImageView
+                android:id="@+id/vip_card_star"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_below="@+id/price"
+                app:srcCompat="@drawable/star_icon"
+                android:layout_marginStart="6dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/n_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/vip_card_star"
+                android:layout_below="@+id/price"
+                android:layout_marginLeft="2dp"
+                android:text="4.1"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

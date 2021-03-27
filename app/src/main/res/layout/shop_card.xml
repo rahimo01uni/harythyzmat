@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+
+            <ImageView
+                android:id="@+id/image_uslug"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/following_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/follow_"
+                android:elevation="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:tag="1"
+                android:text="FOLLOW"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/rlt"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/card_trans">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+
+                    android:id="@+id/title_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Book Shelf "
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+
+                    android:id="@+id/shop_brand_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/title_shop"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/brnd_logo">
+
+                </ImageView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

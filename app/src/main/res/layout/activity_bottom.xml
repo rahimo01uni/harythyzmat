@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_car_sahypa"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:elevation="1dp"
+        app:collapseIcon="@drawable/brnd_logo"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextAppearance="@android:style/TextAppearance.Small"
+        app:titleTextColor="#ffffff">
+
+        <ImageView
+            android:id="@+id/imagelogo"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="left"
+            android:clickable="false"
+            app:srcCompat="@drawable/brnd_logo" />
+    </androidx.appcompat.widget.Toolbar>
+
+  <FrameLayout
+    android:id="@+id/frame"
+    android:layout_below="@id/toolbar_car_sahypa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/homenavigation"
+        android:gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemIconSize="@dimen/bbn_fixed_item_icon_size"
+            app:itemIconTint="#FFFFFF"
+            app:itemTextColor="#fff"
+            app:labelVisibilityMode="labeled"
+            app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+            app:menu="@menu/menu" />
+    </RelativeLayout>
+</RelativeLayout>

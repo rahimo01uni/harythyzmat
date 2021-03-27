@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+    <item
+        android:id="@+id/home1"
+        android:color="@color/colorPrimary"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="home" />
+    <item
+
+        android:id="@+id/uslugi"
+        android:color="@color/colorPrimary"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="uslugi" />
+    <item
+
+        android:id="@+id/chat"
+        android:color="@color/colorPrimary"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="mess" />
+    <item
+        android:id="@+id/favorite"
+        android:color="@color/colorPrimary"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="liked" />
+    <item
+        android:id="@+id/person"
+        android:color="@color/colorPrimary"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="user" />
+
+</menu>
